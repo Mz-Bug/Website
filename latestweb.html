@@ -1,0 +1,1483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Maaz_Tech</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon"
+    href="https://png.pngtree.com/element_our/png_detail/20180904/modern-logo-solution-letter-m-png_83699.jpg"
+    sizes="32x32" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    #hero .animated {
+      animation: up-down 2s ease-in-out infinite alternate-reverse both;
+    }
+
+    #header {
+      z-index: 997;
+      transition: all 0.5s;
+      padding: 22px 0;
+      background: #fff;
+    }
+
+    #header.header-scrolled {
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      padding: 12px 0;
+    }
+
+    #header .logo h1 {
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    #header .logo h1 a,
+    #header .logo h1 a:hover {
+      color: #222222;
+      text-decoration: none;
+      border: 2px solid black;
+      font-size: 40px;
+    }
+
+    #header .logo img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+
+    /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+    /**
+* Desktop Navigation 
+*/
+    .navbar {
+      padding: 0;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    .navbar li {
+      position: relative;
+    }
+
+    .navbar a,
+    .navbar a:focus {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 25;
+      font-size: 15px;
+      font-weight: 400;
+
+      white-space: nowrap;
+      transition: 0.3s;
+      border-radius: 50px;
+      color: rgba(8, 7, 7, 0.849);
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+      font-size: 12px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+      color: #fff;
+      background: #4aa3df;
+    }
+
+    .navbar .getstarted {
+      background: #3498db;
+      padding: 8px 25px;
+      margin-left: 30px;
+      border-radius: 50px;
+      color: #fff;
+    }
+
+    .navbar .getstarted:hover {
+      color: #fff;
+      background: #4aa3df;
+    }
+
+    .navbar .dropdown ul {
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: calc(100% + 30px);
+      margin: 0;
+      padding: 10px 0;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      background: rgba(243, 243, 243, .5);
+      box-shadow: 0px 0px 30px rgba(148, 160, 189, 0.74);
+      transition: 0.3s;
+      border-radius: 4px;
+    }
+
+    .navbar .dropdown ul li {
+      min-width: 200px;
+    }
+
+    .navbar .dropdown ul a {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .navbar .dropdown ul a i {
+      font-size: 12px;
+    }
+
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover>a {
+      color: #fbfcfd;
+    }
+
+    .navbar .dropdown:hover>ul {
+      opacity: 1;
+      top: 100%;
+      visibility: visible;
+    }
+
+    .navbar .dropdown .dropdown ul {
+      top: 0;
+      left: calc(100% - 30px);
+      visibility: hidden;
+    }
+
+    .navbar .dropdown .dropdown:hover>ul {
+      opacity: 1;
+      top: 0;
+      left: 100%;
+      visibility: visible;
+    }
+
+    @media (max-width: 1366px) {
+      .navbar .dropdown .dropdown ul {
+        left: -90%;
+      }
+
+      .navbar .dropdown .dropdown:hover>ul {
+        left: -100%;
+      }
+    }
+
+    /**
+* Mobile Navigation 
+*/
+    .mobile-nav-toggle {
+      color: #222222;
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+      line-height: 0;
+      transition: 0.5s;
+    }
+
+    .mobile-nav-toggle.bi-x {
+      color: #fff;
+    }
+
+    @media (max-width: 991px) {
+      .mobile-nav-toggle {
+        display: block;
+      }
+
+      .navbar ul {
+        display: none;
+      }
+    }
+
+    .navbar-mobile {
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(9, 9, 9, 0.9);
+      transition: 0.3s;
+      z-index: 999;
+    }
+
+    .navbar-mobile .mobile-nav-toggle {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+
+    .navbar-mobile ul {
+      display: block;
+      position: absolute;
+      top: 55px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      padding: 10px 0;
+      border-radius: 8px;
+      background-color: #fff;
+      overflow-y: auto;
+      transition: 0.3s;
+    }
+
+    .navbar-mobile a {
+      padding: 10px 20px;
+      font-size: 15px;
+      color: #222222;
+    }
+
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover>a {
+      color: #3498db;
+    }
+
+    .navbar-mobile .getstarted {
+      margin: 15px;
+    }
+
+    .navbar-mobile .dropdown ul {
+      position: static;
+      display: none;
+      margin: 10px 20px;
+      padding: 10px 0;
+      z-index: 99;
+      opacity: 1;
+      visibility: visible;
+      background: #fff;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    }
+
+    .navbar-mobile .dropdown ul li {
+      min-width: 200px;
+    }
+
+    .navbar-mobile .dropdown ul a {
+      padding: 10px 20px;
+    }
+
+    .navbar-mobile .dropdown ul a i {
+      font-size: 12px;
+    }
+
+    .navbar-mobile .dropdown ul a:hover,
+    .navbar-mobile .dropdown ul .active:hover,
+    .navbar-mobile .dropdown ul li:hover>a {
+      color: #3498db;
+    }
+
+    .navbar-mobile .dropdown>.dropdown-active {
+      display: block;
+    }
+
+    .card {
+      border: none;
+    }
+
+    .card a {
+      margin: 0px 0px 0px 30px;
+      padding: 8px 25px;
+      border-radius: 50px;
+      color: #fff;
+    }
+
+    .card a :hover {
+      color: #fff;
+      background: #4aa3df;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      /* remove extra space below image */
+    }
+
+    .clients-img i {
+      font-size: 60px;
+    }
+
+
+    h2 {
+      width: 100%;
+      border-bottom: 1px solid #3498DB;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+
+    h2 span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .custom-h2 {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .icon-box i {
+      font-size: 45px;
+    }
+
+    .icon-box i span {
+      font-size: 30px;
+    }
+
+    .icon-box {
+      margin: 5px;
+    }
+
+    .icon-back i {
+      font-size: 45px;
+    }
+
+    .container .custom-cards image {
+      height: 200;
+    }
+
+    .custom-cards img {
+      height: 300px;
+
+    }
+
+    .custom-cards img {
+      height: 300px;
+
+    }
+
+    .icon-box i {
+      font-size: 40px;
+    }
+
+    .cards-list .special {
+      z-index: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .cards {
+      margin: 30px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 40px;
+      box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .cards .card_image {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+    }
+
+    .cards .card_image img {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+      object-fit: cover;
+    }
+
+    .cards .card_title {
+      text-align: center;
+      border-radius: 0px 0px 40px 40px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: -80px;
+      height: 40px;
+    }
+
+    .cards :hover {
+      transform: scale(0.9, 0.9);
+      box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    }
+
+    .title-white {
+      color: white;
+    }
+
+    .title-black {
+      color: black;
+    }
+
+    @media all and (max-width: 500px) {
+      .card-list .special {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+      }
+    }
+
+
+    /*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+    .card .social {
+      font-size: 30px;
+    }
+
+    .card .social:hover {
+      color: #3498db;
+    }
+
+    .card-body .icons {
+      font-size: 50;
+    }
+
+    .fa-twitter-square:hover {
+      color: rgb(58, 39, 163)
+    }
+
+    .fa-facebook:hover {
+      color: rgb(39, 13, 189)
+    }
+
+    .fa-linkedin-in:hover {
+      color: rgb(39, 13, 189)
+    }
+
+    .fa-google-plus-g:hover {
+      color: blue;
+    }
+    .fa-google-plus-square:hover{
+      color: rgb(30, 18, 192)
+    }
+    .fa-map-marker-alt {
+      color: rgb(30, 18, 192)
+    }
+
+    .fa-envelope {
+      color: rgb(30, 18, 192)
+    }
+
+    .fa-phone {
+      color: rgb(30, 18, 192)
+    }
+    .fa-adversal {
+      color: black;
+    }
+
+    .fa-amazon {
+      color: coral;
+    }
+
+    .fa-app-store {
+      color: crimson;
+    }
+
+    .fa-apple-alt {
+      color: darkgreen;
+    }
+
+    .fa-bitcoin {
+      color: yellow;
+    }
+
+    .fa-avianex {
+      color: darkviolet;
+    }
+
+    .fa-award:hover {
+      color: teal;
+    }
+
+    .fa-praying-hands:hover {
+      color: tomato;
+    }
+
+    .fa-user-clock:hover {
+      color: turquoise;
+    }
+
+    .fa-smile-beam:hover {
+      color: yellowgreen;
+    }
+
+    .fa-globe {
+      color: lightgreen;
+    }
+
+    .fa-atom {
+      color: red;
+    }
+
+    .fa-android {
+      color: blue;
+    }
+
+    .fa-address-card {
+      color: blueviolet;
+    }
+
+    .fa-alipay {
+      color: brown;
+    }
+
+    .fa-amazon-pay {
+      color: darkblue;
+    }
+
+    .fa-ambulance {
+      color: darkgoldenrod;
+    }
+
+    .fa-angellist {
+      color: darkmagenta;
+    }
+
+    .fa-apple {
+      color: darkslategray;
+    }
+
+    .fa-artstation {
+      color: firebrick;
+    }
+
+    .fa-audio-description {
+      color: fuchsia;
+    }
+
+    .fa-aws {
+      color: orange;
+    }
+
+    .fa-battle-net {
+      color: palevioletred;
+    }
+
+    .fa-bimobject {
+      color: yellowgreen;
+    }
+
+    .fa-alipay {
+      color: turquoise;
+    }
+
+    }
+
+    .container .icons {
+      display: inline-block;
+    }
+
+    .owl-carousel {
+      background-color: teal;
+      background-image: linear-gradient(to right, rgb(138, 197, 197), white );
+    }
+
+    .colors:hover {
+      color: whitesmoke;
+      background-color: blueviolet;
+    }
+
+    .effect:hover {
+      color: whitesmoke;
+      background-color: blueviolet;
+    }
+    .zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.shadow{
+  box-shadow: 10px 5px 5px rgba(49, 49, 51, 0.74);
+  border-radius: 25px;
+}
+  </style>
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo animate__animated animate__bounce">
+        <h1><a href="index.html">MAAZ</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" active href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" active href="#about">About</a></li>
+          <li><a class="nav-link scrollto" active href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <div class="container">
+    <div class="row pt-5 mt-5">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body mt-5">
+            <h1 class="card-title" data-aos="fade-right" data-aos-duration="1000">Grow your business with Maaz</h1>
+            <h4 class="card-text" data-aos="fade-right" data-aos-duration="1000">We are team of talented designers
+              making websites with Bootstrap
+            </h4>
+            <a href="#" class="btn btn-primary mt-5" data-aos-duration="1000">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <img src="https://bootstrapmade.com/demo/templates/Vesperr/assets/img/hero-img.png" data-aos="fade-left"
+              data-aos-duration="1000">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container clients-img">
+    <div class="row">
+      <div class=" col zoom">
+        <i class="fab fa-adversal " data-aos="fade-right" data-aos-duration="1000"></i>
+      </div>
+      <div class="col zoom">
+        <i class="fab fa-amazon " data-aos="fade-right" data-aos-duration="1000"></i>
+      </div>
+      <div class="col zoom">
+        <i class="fab fa-app-store" data-aos="fade-up" data-aos-duration="1000"></i>
+      </div>
+      <div class="col zoom">
+        <i class="fas fa-apple-alt" data-aos="fade-up" data-aos-duration="1000"></i>
+      </div>
+      <div class="col zoom">
+        <i class="fab fa-bitcoin" data-aos="fade-left" data-aos-duration="1000"></i>
+      </div>
+      <div class="col zoom">
+        <div>
+          <i class="fab fa-avianex" data-aos="fade-left" data-aos-duration="1000"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center py-5">
+    <div class="custom-h2">
+      <h2><span data-aos="zoom-in" data-aos-duration="1000">ABOUT US</span></h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" data-aos="fade-right">
+          <div class="card-body">
+            <p class="card-title text-justify">An About Us page may be a deciding factor before you convince someone to
+              convert, whether that comes in the form of:</h>
+            <nav class="text-justify">
+              <ul>
+                <li>
+                  <i class="fas fa-check-double"></i>
+                  <span> Making a purchase.</span>
+                  </l>
+                <li>
+                  <i class="fas fa-check-double"></i>
+                  <span> Downloading an awesome piece of content.</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-double"></i>
+                  <span> Signing up for your newsletter.</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card" data-aos="fade-left">
+          <div class="card-body">
+            <p class="card-text text-justify" id ="Learn">The main purpose of your About Us page is to give your visitors a glimpse
+              into who you are as a person or a business (or sometimes both).
+              As users discover your brand, they need to distinguish what sets you apart and makes you… you.</p>
+            <a href="#" class="btn btn-primary m-3 float-left">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container icon-cover">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 images">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5w5ReWs56N_gUnw9LLuTfJeo1rx1XY3X0Q&usqp=CAU"
+        class="img-fluid mr-5" data-aos="fade-up-right" alt="">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="icon-box" data-aos="zoom-in-down">
+          <i class="fas fa-award zoom"></i>
+          <span><strong>AWARDS</strong></span>
+          <p class="text-justify">“There are some games you don't get to play unless you are all in.”</p>
+        </div>
+        <div class="icon-box" data-aos="zoom-in-down">
+          <i class="fas fa-praying-hands zoom"></i>
+          <span><strong>Projects</strong></span>
+          <p class="text-justify">"Let our advance worrying become advance thinking and planning." ~ Winston Churchill.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="icon-box" data-aos="fade-up-left">
+          <i class="fas fa-user-clock zoom"></i>
+          <span><strong>Experience</strong></span>
+          <p class="text-justify">“I am not what happened to me, I am what I choose to become.” ...
+            “We shall not cease from exploration. ...
+          </p>
+        </div>
+        <div class="icon-box" data-aos="fade-up-left">
+          <i class="fas fa-smile-beam zoom"></i>
+          <span><strong>Clients</strong></span>
+          <p class="text-justify">"Just having satisfied customers isn't good enough anymore. ...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center py-5">
+    <div class="custom-h2">
+      <h2><span data-aos="flip-left" data-aos-duration="1000">SERVICES</span></h2>
+    </div>
+    <p class="text-center mt-4" data-aos="flip-left">“ To earn the respect (and eventually love) of your customers, you
+      first have to respect
+      those customers. ...</p>
+  </div>
+  <div class="container my-5">
+    <div class="card-deck icon-back text-center">
+      <div class="card" text-center data-aos="zoom-in-up">
+        <i class="fas fa-globe zoom"></i>
+        <div class="card-body colors">
+          <h5 class="card-title">World</h5>
+          <p class="card-text text-justify">"The world is not dangerous because of those who do harm but because of
+            those who look at
+            it without doing anything."</p>
+        </div>
+      </div>
+      <div class="card text-center" data-aos="zoom-in-up">
+        <i class="fab fa-avianex zoom"></i>
+        <div class="card-body colors">
+          <h5 class="card-title">Fligth</h5>
+          <p class="card-text text-justify">"The world is not dangerous because of those who do harm but because of
+            those who look at
+            it without doing anything."</p>
+        </div>
+      </div>
+      <div class="card text-center" data-aos="zoom-in-up">
+        <i class="fas fa-atom zoom"></i>
+        <div class="card-body colors ">
+          <h5 class="card-title">Virus</h5>
+          <p class="card-text text-justify">This year has certainly not been a normal one. But then again, as science
+            journalist Ed
+            Yong elegantly put it, “Normal led to this”.</p>
+        </div>
+      </div>
+      <div class="card text-center" data-aos="zoom-in-up">
+        <i class="fab fa-android zoom"></i>
+        <div class="card-body colors">
+          <h5 class="card-title">Andriod</h5>
+          <p class="card-text text-justify">“My own self-consciousness cries out to me coldly: how does one love zero?”
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container custom-cards">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in-right">
+        <div class="bg-image p-5 shadow-1-strong rounded mb-5 " style="
+      background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    ">
+          <div class="card effect">
+            <div class="card-body">
+              <h5 class="card-title text-center ">Special title treatment</h5>
+              <p class="card-text ">"Don't try to tell the customer what he wants. ...
+                "Assumptions are the termites of relationships." – Henry Winkler. ....</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out-left">
+        <div class="bg-image p-5 shadow-1-strong rounded mb-5 " style="
+      background-image: url('data:image/jpeg;base64,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');
+    ">
+          <div class="card effect">
+            <div class="card-body">
+              <h5 class="card-title text-center">Special title treatment</h5>
+              <p class="card-text">“A customer is the most important visitor on our premises. ...</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-in-right">
+        <div class="bg-image p-5 shadow-1-strong rounded mb-5 " style="
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhMWFRUVGBUXFRcVGBUYFhkXFRcXFxcXFhcaHSggGBolHhUXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGy0mICUtLS4vLS0tLS0rLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgABB//EAEEQAAIBAwIDBgMGBAUCBgMAAAECEQADIQQSBTFBBhMiUWFxMoGRFCNCobHRUnKCwTNic+HwB0MWJJKywvEVU2P/xAAaAQACAwEBAAAAAAAAAAAAAAABAgADBAUG/8QANhEAAQMCBAQEBQMEAgMAAAAAAQACEQMhBBIxQVFhcfATIoGRBaGxweEUMtEzQrLxI8JygpL/2gAMAwEAAhEDEQA/APnLq8BxBChDKx4ZJ27o/FINHaHi53EXOZ6nEGetLLwCkoIO1zDZkgY+mJrw6hiGBM7yGaYJJE5LHPU128gIXLqRVbldotvavoeSGCI+LrHoOU5oTWaYOCDSfQ8R7shDJTBVmXa2QOeT4fKtFbv7lA6ZI5cyBOfkKylpbcLi16b6Lr+hACzGpusCUunE8x/CDMAcgOsCgLtraYaQR0IznNa3iOid1+7BDbWWVmWBHiBI5iOdZSy+wkMgbp4pkZBkQRnEexNX0yIMLsUMUcQ1uba356em6rj1/WrTbdSFMggjB5CY+XlXXikKFyYBJyPESSREmYwJx7V5ZZmKgZ2/CDEDO6M45zVm0q0uDTyV+p1NxrhZ2k5E45RECOlCWtsjdO3rET8pqdx2G5TiW8QgcxP05moOohYJJIO4REGSAAZ8WIM45x0oNbFkXPDojvsAJvwhxCAwF70BpzhgVmAJiDTPsxwq1duKV371bMxE8wVCiYwedIOGXVFwM3xbhtAwoJbJwREDkIIzRvDLt1NWoRirFwuCQctFZqrD5spiRP179V1cHXbNNz2yGnLymBlPoY1nQlfR7vBmvr3aFFMS5Y7SBvZuvOREf2pjb7LKrWnt3H3hh5HnzgR5Ul46Nun3kjcbjAGAd0AgfywJPuPOjuy+suXbsMWYW1ZhyEGQsHz5z8jXIw9QNoPJE8PYD5mE3xNtSpjKRY8BoNxx80kbg769Nkw4zY227pBydo8pCnypR2l1yW009p9xEMbizB3fhHyFaS9YD3AjclRWJ5DzafT1rAdr3bUaq0ttT9452DPI7QPp/Y0uFAJDXaCTPCxA9gDdZ8SZJe3ctEcYeS6RzcQCNxIQdribWzcjILL4Tz+tD6O2dTrUV3W0Htt4n+FRE1XrrZRrqHmrAH3Bg0Ev+KP9Nv0rolgLCW2JGv8A6hZsNiq7iaLnHKDMc83dtOEJ3Z1mh0eoXukOrvKwHeXMWRiJVfxe/wCda/8A6b8IW89/VXgo33XZEUeEGT0r5rwXTBtXbLgm2rIXAwSIEgGvo9rjxs2766cbbYb7sNzXdAOetZsfTe4BtMSSBJOkTpY8b9N9izcVTpuOc6TprYa+wPyWg7UcaAt3LdpvEB4iPw8sV8g4hrAgJJz+dPbOsixeJMmJ9Scc6+f6m+XYk1d8OwjaALBtvxsudXLsWWVHWEaep/jVHLfLlCfNqN1HIUt0vJPdqZXuQ9q3Gx9/qVTiYD2gcB9Ew4e3hpTxs/8AuNMtEcUs41y/qNIwQ9U0nXA5lX8E5ijNf8S/86UFwXnRuuEssUXfuVFUxXQGo+L5UOlsnl600OjlpNMOGcHuXfDbSfM0C8NElW06hcQ1gk8AkGh0EEE5p2LEjApuezNy1BuD6VcdLAwKXxA+4MrHjaz6dTJUBB4GySWdF50bbsAchT3gmgRpZ8x0q/jWkQIWQBSKzuxDQ/IVpp/C8ViMP44iNY3ICzxUDnVVy+ByoO9qh1NA3dd5VpDSVgp4dztUwu6j1oQ6kUCS7V79jPnRyrUKLG6lIGJJk5JyZ8zXlEXEa3Kvb2lgCNwYECZlZjnEUPWsGV3XNhXLec/5vCR4huhQPwzO2ByI5Uy0HFNpE7QpgbVnw7QBJmcHnz5zQalG5Hu22kEnCYHIkEnxAZ9TQdLlDhcJKzA/yEyP98R+eOq+gW9QxzJ5dfUR+kVnuP8ADf8AuKP5v3qvhPEhbXdcctLbdmSwAX4i3QZAAzyPKM6K2yusjINZzLHLjPFTC1AZkfLmsRavQNpAKyGI5EkAj4uYGeVT3q+xIVI5v4jM9W549hRfGuGG024A7GJg9JESPzH1ofWWrsxcX4fuwQFjw9Ny4YjcM5rRY3Hf8rtMrNc0EGx/3HHbRUG7ggicDac4g9K63awXIO0EKSCJ3MGK8+nhP09qibRnbGZj51LU2wrsFkgEgEgTAPWCRPsTTWRJJud91UOY9xT5AF1kAMT3tvY0hR8QMlSMg0m01rc22GMgwFiZAJHPpinCqH1FpTuJZrfi54IGAP8AeqauvofstmFiDOzmH/JbntEB3K4C5cgbgY3bug5/CabdkWUYAH3jkE5HhRZK/VqR8WsOtogrIO4AuIAPiaFnkcEfM077O8OuFA0CJYgfTMVwWNAoZSY1+5C2Y6o4VgWXII09J47SmXaTUizZvXiuWQIpkj1J94MVl+Ewts666MWkCWhgAu4QfM5if8xNHdv3a6o0lv4otgIOZa4Y6COYH1pF2zvNbXTaEcrBO/lDXIXPyDH6nypWs8UNpD+4mf8AwAH+Wg67RKk+Ew1Drb/6zH7m/QJNrWLNeY5JaWPqTQ2ntlr6gdUNXagZue4/UU54XothVj8RU/8A1XWJhnp9lwGVxSe528/9lTo9MEZfl+lS4jrQli8esj8zQ2v4kqXFH4iRApPeulrGpJM/eD/3U2QmCeI+qx4VpqOL37z6yieDXy+n1Bb/AJyrMGvr3ZXsXZOgZmuHvLig45ZjlXybVWdjskztYrPnBIqzD1Gve/Lx/C6zqbmgSidL+D+qmN7kPalulPwf1Uxv8hTu174rn4gy8Lb9hNJpHtXDfI3DkCYgRzHmZrE8fQbiEyu9tvmRJj8qZ6DSsV8hVup06qJ9azsblqF0kztwWV2NaMrA0eWbjeeKE4Dw9+ZGPb9abvpCWECvovZIWWsJtgjry+c0r1tq2HbbAXMRWejivGe4REKr4zSOEDKmaS7aI524rM2uFZlvpW07LC2lsqSFOefWkGo1gXlSPXcYUTmfarK1HxW5SsPwzG4ijXFVjZtEdfotv2j4rZC7EO5uvpWN1uvxkxWcvcWdzCCqxpnfLGmo4cUm5V0MZmxdbxq8N0AAvATrR9oxZJxuBqPFO0T3l2IpAPMml1vSKvrUmuqtMaNMuzRda6XxKrSo+BTPl+fRDLpCfiNXJp1HSotqvIVS10mrbrJDzqiWYCq/tAocivNtGERTCA4nxK/qGW9fO+AEBIABCZ249/zoAn5V5UnjETyzPn6elaGtawBrRA5aLtOcXHM4yV6iSCZAiMEwTJjwjrXWgudxIwYgA+LoD6VCupksq4hlTyV/VTOw9RzGfamHAeKG04BG9DPhM8yCAcfX5UP9iLKm0LuO7G8Fm5GAg+EgHrzz5UNpfiFIYIIKFZrXNIOnZT3i2tm3BBhsqSDHOCV8+UH2pILgphcggqxCgiNzBiF642ycxHLrS/TaV7mEExSsAAVNJrW0hJsJ9L992F51IOIUDEkDyEf71a1gbe8kbCSqnGSsGCPYg0F3cbgynd0zEQcyOtQS2SQPPGeXz9KOUK8NbbdFo6yJEjqP96e6Rhc1FlQEYiMgiSVAhQSYMRgRMk1mtVpmtsUYZHkQRnIII5ipaIw64nKQcyIbpQdTDr93TUpYYadSPcG31X07igJIjJ8PhA8O4qennBH1rWcE4laYrbAMiRGTMcz7fvWXLBiZDm6ly2FXcNm1Egses8yfeikYWnVRzeVHPPpjInlPrXnxTzUhOw+us8vqt9XFZMU2nB8xjjYARGn4vrCO1hFm9qdbdQ+BU7ogjazDd4QeRI3A/WsLxtN7WmYklsk+ZIQk1sO2mtFtDp4IW3bVzzMs5IgN+IAKKs7McDXUG3qL2LNsCJwHJCQP5RHzOPOkovbR/wCZ3QdA3ygdZJ6GdoDYrxXtyDkeX7r9/hYzT2V3uT5j+1HcQ1ioVCmSUb5Uf/1C09my/wB0QGYyyjoJx7Vjmv8AiGf+21dSmfFYHDuy8+7CuFZ5edL/ADlAG2WvKxMmVq/ufub4nncn86oS8O9QY5pTS5ori6V9QVHdveZFaRllbOJkVscYj0+qRxfIjgPqi+AcX1CaW7aFw7Qvh8xywDWTbStJNaHgSG5buBRzn26Vo+zPYxr7RgkZJM7R7DrVZe2jmcbcVBinmqady6bD0+SzfAOy1++FdRCgnJ6+1PuHdnmZwgXc0RnljnW6t8NbRnZuDiMQBAn0PvQp1y2Tv3AEedUNqVHy60HRYfinxCkDTpNa4VASKnvtrPc3QP8A4fNvwvz9OVZXtTohy9elP+L9rN7SJY8hGBWb1XfX2kiB8xVrQQsFBlRtc1Jhu2aJ9lPgut7lYkx5CjL/ABZmMKKDt6JE+N6vt6pAYUUxT1Gse8vDZPyQ9/T3XMkwKF+xKvxGacd4TzMClfEAsHNAFWUqjicunRCnUIuB+VVPrSeQoQLUwKsyhb/DaFJrhPM14BXoFSAqIyoxXsVOK6KCkquK6KnFeVEJWcqVtoIMA+hmD7wQajtr3bWqxXXXlW75AhPgBJIDSRMy+eQ5YjFQ2GJjHKek+U/Op2keGKgwB4yJgKSB4o6EkD3IoEAqTChcaSTAEkmBMCTMCSTA5URw2O8AYkA4JAmPUChYq7SjxCodIQcYBTDUWlmGYhc+ITJiYjE5MfWvez2r7piSJGJH7V5f0xYAAiTkZ8uh8vnUeGFk3EAGJWDnMESBPTzqr+26oysqU3N997d/kp9xnhn2lTqbBBVc3MThczA5tHSstevgNutyBHqYMQYPM/7027M8abTuyM5W1cnf4dwk4BPUDziT6HlQuuFpLl1U3bHACgGAPErREeIeHAx08qIAb5UuG8ak7I+41a7e2x3BE2iAUuKnaGxBJHMTiOnOM86I4exZ7VvEF1gkAZYqMtziqmsARJInIx8qP4TaR79pVEsXSBkgiRIgz7zRe4ZSVtaIN7aag/wvpmmQlruVPjKvE/hM4HlI5+tLrPHY1khVIt94oLAnKiMD3o0jurF68vJu8VGIMBicAnA/DNJezvB3uahBbZWYMxkefPcZP/IritY0UTm0j6CPsi14fji52wAGu8uO3otFpOH/AGy81tjC9zaa689CzEx5GPpVPbztCLS2tNp8IvhEcoAWGPmc4pt2r46mj092xpwO9S2N7xiWxJ8+VfNOONPdEmTgkn1W3S4Si51QPdpsOHl16kR6e6OOcx1PJOuusmDOu7emvTWnW3CzXSTJJ5nPUUKx8S/6ZogWWdmVRuYnAEk/SiRorSuputLBI7q0QTPXe/wp7LJrrARbvRcv9S1odOpGgudvlzMBJNHpnuX0CKWjYTHQevlWo4T2aZ1uK2Q1wmPwjPU0IdU7EJbHdW8eG3if525mtDY1/dAppLbFPxPeBgP+LxSEieVRzzIHduJ+nqsOLrVzTzNytiLE311mwtGgnqU14ZwRLK5g/kgrr3aazYkI25uUWwD8iaSqXulhcuvcO0+C1kD/AOH60A95bZKpZRSOtwb3/alIBsuPTw7nVMz3EuF7GPmb+oCZv2h1FydiBQ3UyT7yaXXbc5uPJ+tVXL7vBZicn0H0FcVxTSVtZSbT/aAOn8lSW6qkbV+ZoPUa24xPigTyGKIVcig3GfnUAWim1szHvdepNW2uYqKCrUGRUTOKt3GTnpQV0c6NjPyoS6OdRLT1QIFTAr0JVgtmitRcoRUqsFk16LNBV5gqa6KIFqpd3UQzhCxXu2idlebaimdZsAjp5jInn79fWq4raHQqelVNwpD+EVZnV4+Is3CyBFdtrcabsUbqsyiAsEmeQbAoLV9kik+L2xM/tRDwU4+IUJAJidJGu1lldtW6dfEKa/8A4Bx1U8+WP+Yry3w+8uDbBBAEgLIgzgxIPmecVC4HRXePSLf3hUXUY4SZOMczPMVXYMjEkACdwA8USwx0mY60fr9Bds7O8tMN0FQ6mGHp58x+VV8OVl3biAB8SnmTBgACc889KTNIlt07WObTOaQJANjrYifqB9ZQP2E/GY24Y5AIBaAM9aYuUtPcYRcRre1gY3bdymVPQjo3mOVBMAVeE5FcxIiWklp8JyBgZijjJZjbUyEbDBSu3wQRPNgC/TosUXHu3JRzQ/yuEz11kXEct+MRBSu7b2sdrAgHwkrBjmJEc6usahy6EFQwIgqpBLE8+XM0fotNO5XErAPMSCVQBh5xOR5VNLQ78I6I8naAvhXxHDKVjInkcUpeDbXv8otcWng7vlxHO46TpePi8lkaZyqqxu3QHEbiZtpzWYgHP+aj+yK3bZuJZFvvWw1wAQlskZZowcf8xQfae+viYMSVDC0jlty7fCZHIBSAQvXJrzsnp18Ru6jaDuNxBzaYIknDecVjNOaWgvwBie+JjiqKeILHEkmAP7iJgTbaBedLiwsSqOP6dnF1UG49wkkHcWaSARHIE8qqXsxduhGfaiIoLMWURhOTZA+E1p21osoDp0CeFRvwzkAmJxgznrS59QzGTkwDLSYPWOg+QFX0xlEBcmrjXuIM/LkIjS0akgnhGyZNBdKuqbVtsc93A3AGfG0y3zNS/wDxqKRMCFAMFTMdcn9KZZIzn3J/eq3sMThenrVizfqXREwEFaAUjaoBxk+I/nj8qjqAWMsSfc/p5UeNE88q5uHNNRDxmzM3QGnWN38hoZrdPrHD43Z6VUdCKiAxLQ4lKVt4FXG1img0oEYqZsiog7EBJVsGeVDNpDNaEWqoa1nlUTtxJlK10lTTTZpl3J8q9WwZ5VFDXPFAixmqLlkU2OmbntMefShn0zeVBRtXmlfdVPu6L+ymvfspoq3xRxQeyvNtG/ZTUfspoI+IOKD21xFGfZTXfZainiN4oEioxRx0vpXn2X0qJvFarQ1XK4keXrWVbjp6Cqm42/pT5Srf0FUr6jZuDaIqvWuChkjGc/2r59pe1N1RBgj6UPru0Fy6QCdqzkKcx700FYmfBa2e8Rx7utd3wJ6fL9hU/tCKYaMDIJjI5j0rGa+5ue5d063Rp1ZY7w7isjAdlxJIaKhqtct+/v2JaBgEWx4fVvU0rWyLH+QfseS6L/hhBueN9vzPJa3i2ufWMoe4e7tq4kBPAu0iCT4ZOBJz5ZpNwtFtMXuQwn+EkTz2kEc4g/OletukKVDHbumMgEjAaPOKhw9xPikic5/SaVtMNbA04ALdkz0zmJJOpJ9trR1IjZaO9xfQHdNidxJO1VTP+WGEe3Kh11Gm7y6TauFNm5VVgrhZGSdpkVnnZW3GQpEBVAOennjlJ9TR2otu7Mqy8LtWOUDaxAnpkmmICVmF8IghxM8Tm15HlKa6O7Y7wAJcMxAVlLcrePhzVjajSC+Cy3jLKxO5RGZOAP8A5Ck+kvKN73BOIEGPGVtkYHtVmm1+64jMVBVhtO05grCEgfDz/PzqObAS0qMv30FwYvyP1mFr+F6/h4JvG1eIVn3bodIafER+kkmnOq41ort0bVkJ8QXav5EeZFZnXXbLC5aKbP8AENvaxVfvF3Itzw/CCQZ6RXcHuxcbv9Krqo2MQh+EYLEnBkj4qTIb99x8llqBj27kW1ge5dYgxJA14DRan7dptolCYH7x1zXabW2AwxHLpQer4ZbvD/yr/gUqjyhAnnJBB6jypSNPdtttueCNi7rgYAz1DxsPI/iHSiDC5rsEHuADr+22+x46m3BaG9rLROI9xgfpV+i4oltpVwD67eUeorILeMZBHyMfI9aqe+JEGZFEkGxAVLcG5jszSQRodwtndu21MBg2AZUyPavRqrOwgqd3Q/risWt/IzV+oS4iq5kK+/aZ57TDVC/SVGfDzJLdIvaQAbc4uRB4wtQuot5x0rvtdn+HP8tZXT6pvFn8FVHXN50Q8qoYCSRK2ut12nLTbUAe0n61QdVb9P8A0n96yq684q37digCjVwhc7Md+EAewEBaL7Un+X6H96rOtTzT6H96QLrRNDNrRNSVG4G+61H2xfO39DXfax//AD/9JrNLqhUlviakoHBDmvpeo41YNjaGT4fhg+dY+5qB5p9DSc3c0O92qaNIUgQDqV0MU92Kc0vtAi3fy0CcG/6p9Kib/qlI+9r3vfWrVR+lCdG96iom76ik/e+td3p86ib9OE2Nz1FQLnzFK+8PnUe8NBMKCaFz5io7j5ilpuGvO9NRN4KxO81280y7PcVTTO7XNOl8MhULc5KT+IYNKzWgElxBFhEG1+NtRHPVetLQGgz6cF7vNSe5JJ5T0HIegmq66nhLZHW78ju1IRWA37zKlk3MDO2V8gPzzR3BeC3r0MuAeUmJpPaubZwDgjxCRkRPuOY9a2PZ7jtoIqOdpUR7x5VlxLnsbLBPzXQ+H0MNWeW4gwI4xPr3KRcTttblWGVIkdOf6VPTaiwbBAtsL/eElt33fdEYQLzmetE8a4nN3vkHIgrz6Ur0WNwIEkDrMTnoefvTNktGax692XMqtYzO2mZbJAPKUNdMHBn6/wB6e2tTb3xcubU27nVQFfwbYS2+fE4n0HMzQXCODm6S7nZaWSz+cdB+9Q4myly6ptQibe6ZZQSsj5g1Y5oNiqzWDqhYzbUjYyIuZv72vqnDWEv6O7qd9i29tgArMWuXEJAQLOfCBt3ddp5Ul4aoZgu+2rF7YWQSZLdCMLHmaEbUkgA5CztBJIEmTA6ZziiOGazZdttsQw6/ECRkxMTzFBrC2ettLcvvyV1U5m6aDqtlxkfdlgU2G6yE7d4PhcowJEn4rgz/AA+oo7sxeuPG24u9JKgDaGtK0d2QRDCMY5TWi1t+13Wxe6u77LLb2iO7cfCXI+JvF5A4PKaynB+011UFpbShu9abkEmUVQ1ufImSR61Wx+cAgW524gm97dL9FxnU4D6eYZtbDSYcBwdImIJgWMHUPjWsuL3xWbZFi3AAIKnc2FIHhz7Vf/4ovWksqXDoVAe2QIEqkiDG7mfLJrRdouH2NRp7l2wdt25bXmCPUbowVOcmawPEwVFtSIIgEf026ujNsqsNkdFN0E3kA2Fhw5gHl1Agwvd+8a00iZ7u2PGvI/4fMj+XcPWg24s+8BhPgMkYY8ufT8qu1eju2wzMu0bsHy/aq04kHcLfQP8Adz3gxfH9Zw/9dK0h1wr3UH0bPZNuEO0HGJ+Xqo6fXqXAFwDli5K/RxuU/wBUUVf1DrkqdsmHHit/J1laEPCVdg+nYXAIJQnbdHunWmnBOy7Xg91Ltyxc3nHjUGDOSDmjkBVVarQYM+a24IvM6WuBzylR4dcL7wssdhwM+VDvcMwaYrwrV2y/e2EcbDFyxIc/1qBn+mkveWXYxfe285XUxM/6i/3pSzZJSGcmo0S3iPMJjeOV7gQjluYHuauL4oM6a4oXk4zm2Qwqw3MZpYULQ64Mq5XyKDdsn3qxHyKDd8n3oQrKbLlGI1W22zQiNV9psiglLURuzQ1y4c1aDk0NdPOolYLqsXzUhqDQ817NEhaCwIoaipC/QgNezQS+GEZ39ed9Qs17NRDwwi+9rzvKDmvN1RTw1nRU7qQSJDQYkTB9RIBiqq9rUu4DZdXVJYkTy6xzjrFW3mDszSB5SIkSAMKIBjPyPpMlCFXaAkbiQJyQJIHmBiat0kbsz1j3/aotZHihgQvI5G7MSARPrmDUtJdI8M4JBI9QDH6n60JkKVGkC6aX+HscEhQU70MxIUrAODGT0x1FedndIruVZhAPnz+flXmqgKrOQ4yNm5gQOhmIUT0mccqE4Z3sXGtsFVV8ZMQc4UebE8h6VVeCq20s9PLME8AZGndinvaDW2yFtIwFtXCuFjc2CTHTaMc+ppAxDSgkqSBb3N8MkfLMRQ7YbHiAPPOflROutrtR0BUsDuSDAIPxKf4T0HSKaIKajSbRbltr6njfdW8VsWwLRtK6g2xu3kHdcUwzLH4Zn6VDg2ha7dVVV2gidgmPXyoLafWth2C4vb0u8XRG5gQYJn05csfnTX4qmqTSpeQF3UknnfVPLY237gBVPvSGt+LESN0GcEuTz6Vtl7IacRtEO8sWmPEY+H6cqyfFdcl17oW2wLNbIYSIDgfF8iB8zR1jiWpddksuwM4BG0+GJieYrLiqVSplDXRBvfbvYrDgcRSw9Vz3MJzNAFhw9LTva4MCIS9uIfZL9xtkAWrasCZ8KFg3M8+de8Z4Yl4W71vIwyEA9YgMPIxRfFtc1uddbiL1sI4wciWdTiRKnnQXZfjiaa5bW4R3RHWTBIQCIHLNXiQDI2+fPhwWKoS99OrSJDgb2AAGtosY100hskBB9puJ+B7TIVZiPixieYPWsX+Mf6Zr6v2+4lptTZC2yrMDKkcx6V80uacrcE//AKzVWHpCm2AIXYxPxN2MqFzyDAi1ht95Sqy5F5CCQZTI9q0HDO0Ny2LjEnwuRI5xPUdaUog7xPdav2jZd/n/AL1fKorhlQgPE2H1X0Ts52r3+PqvVf7qau4nwzT6uWuIjlh8QCh/yr5/whttu4VJBH+1F6DtAynxT/MP7ijImSuNWwNRpcMO4gAyACdY167dFpdL/wBOAbbXbOoa33fJG5HE5I6VntVbvWxF23uHmAa0ug48GAnIPUVruzvFLCht207uXI1U8OaHOHm4CwhWUsW6pUp0q4DYBl5kzqZOkcPuvkaNbYjJU+tVXuF3ASVIYT7VuuMcAtXXLKgWZIjpNYrinDrmmfwOfY/tTFsaqzD4tlV2Wm6/AiQfXUKgW2X4lIq2zzFXabiTRDqDWk4d2ba/b75AoGSBMEx5Uhgaq/8A5CSMvtdIBYaZ9KAvgiafm2VPMH3pVr7kg+GjCpo1JclINTBocPUw1RdEtVwNSmqga6aWEmVXTXk1Ca8mgplU5ryajurzdUUypFXVdfgALEMJ3HdznI9oFVs5MAkwMD0Ek48skn51pBkSuq5uUwV60QImczyj0ivQF2kyd0iBGIgySZwZ24jqfKpjcyc/CmYxjccnzPIflXultKxO59vl4WYk/L2/OgdLoiNAod3jEk9ccs4zTzgfCMh7oxjw8sdZo3s5wzaGJKgmMtI8IMxEZMwfSKZ8Uui3Ls4aZJYbsmc5YCTn86TNeFzcXiiRlpdJHc+seuyUdprSDxImxGMKCZ+GJpZxDW3GC2nZWW3hdoWMCJlR4jGJobWXzdbe7QDv2xBI28gRMiZ5n+1W6mwGs27qnp3bKYMMuSZ6Kdwj51CIIlasNRDKYYTcdkSd/czbmq7rIAAMnBJOIBHwx1HrUbXiMDJzjHQTj19KH1E7iGbcRiZkYwIPUVBHIMgkHzHOny2ThoP4RbXkxE8sz5+npTu1rW7+xbWFXdZdUB3KpJkZMnrWesEkhVtq7b5Agktj4IByv505Zv8AzVmZRkewgQj4RgkzzGTyoEBRrLxeN76rV8T1DWpuyJJJB24LoGhCOUGBjlTzs3qQbtpyI8TKzSSD6dRAnkKR8eB7ggwVW5fiTmDuG4HqBtj/AO6u7PqRgnAd/hg8iJIPXNRwlcSswsy5Z1BA4W09IvH2KO1OnU6m/omPga0pTd8IuyYgDlgAYrGcXd0ZEdYZIQg4gqExW07b2H7oa20MhEYmOTowIB/Ks32wU3U02tOe/wBveeS3SEAA8hCkfL1ojzDvVGkxrXgu0cTHtx0vYDnbZBaTV7WaeUimeotC4P6MGkFz8fvRfC9f4xbP8GKWLpatEkZ26hLddo7tm8m9SA20qSMEVdxHQXrNkvcXaLp32zIMqX545fOn2sm7tDncFgLPT2rN6/Tslu7JJG/w+g3cvSpckRpv9ovb58Fqw9cVABUHmtpp+7nyXcJcmzez0/ak5unzNNeD/wCDe9v2oDQaC5fcW7YljP0HU0xIaJOi3Ydmas9rRckfRX6HUMpQhiOdaTTcYKxuwfMUbwrsVsVftAO85ABEQfI9aV9o+G9wwAMqRikBDhI0XNr1KFXEGgR5hIMiLhfQuzmquALqHXdaGZHOP4gOsUi/6m8UTUFDYXdt5nlP70r4dxrULpu6WO75btuQDzE8qA1HEBgNjPypSwOcH7hV0G1KANNrRBM6X77lGdntMHHiAnyNa+1fv2rXd2xC5hoJ2z5GsvwrUgEYmvp/DeM6fuVG5RAgqec0tUgNFpVNIVH13Fr8ojqvlGo0F8N4CW9KXXNS9vF1CDX0jTum9iIEjHtS/tDpluRgNHOrciw0fiMvDKjBHHQ/wsEl+2/l865tGp5YozVcAUmVwaBfR3rfIyKVdhr6bv6bo5FVtpWHrVbAjmKuTWkYYRV63lagrC57dQgN1duoy5YU1Rc0vkaCYPaVUWqO6ovbYdKq31IVwE6INXJAScTOYiTiSajcSCRIMEiQZBjqD1FTRTcKqieLkAsyxkmT65j5V7ZAJXaNzTkH4SARAxnzmr5W2IEnRbjsb2PTWW2v3GNsN4AlrAhYmZk5KzHnQ+q7LjSX2UndEQTzg8seeKJ7L8UvaVWCRDEttg7VJ6L5CrddqXZy9yCzA5wYBEiI5H16VjYKoqnMfLsFlxuLpvo5aQObc/nmqbq7AJxImOvzrOcQ4g107R41EhV3H4iPiEHpHt50Z2k4i7Kq+QA3AySsmAc4OCPYD0rNouCc4jI5SeUnp1+laGCRJQwuE8OXkG4tqDoL9++6660sSAFkkwJgSeQkzFSa5EAMxGCQcDd1gSQR649hUHQqYIIODBxgiR+RBogNbZQIKNyn4lORJYc1xuOJ8qc2hbQd5774qx271rjBFBK4UbjGVAKkYkAGScc6o1iFbhVk7sqQGTxYIEH4iTJifnRLXAoZAzMYhXDMALct4VXyaQYPmcVRccOWfY0BRPiLQYCBmYjlujHqBQuOigZGs67mfnc9Sd5XWv8AF+6JUSdhZgGAHKWEZjyp4NQO+Rykt3hViAAYLKyEHbAYZAMkwDgYpLw4jeo2yS6QZPhhs45GfWnPZbg1zWauBtG1t7lsDDch60dBJSOcxvmd/rabSfZa3j98nTE7gdz3VcGJM+PpyEmiexjAsZ5W3Mx4vDckHaD08I+s0R2u4dFtre5Za4XAYtujuyBzxzWPmKL4T2Xu2XS5K7WRlboQWO5T6/70jnMsDae/wsNOkajA8XaCRvaSdJnQGTteLaqXE9KXs6mzEi2u5fzke20E1nOFEFW0LnwX03IZB2vbCBcHmcBgOu3/ADVsbwNpluESpVA43Y3A7HPPxHP5+lYPtlpe4vobZM23WDHopHv0pmmZXP8ADh2Q21ja94v8jvz1CS6u0Va4p5hoPXkaXz94P9M0fqLhYux5kyfc86X/APcH+kaI1Wxmh6fwnHDNduIU/EIn6UzutNq6kKQ5EyJOD0PSsrwe/bTWWmvBmthl7wKYYrHIH6Vu9Pol1PfPp5W0WPdhjJx0NLfNAG3os+OoMotFUuAEttv16CFkrGj7u1eA5EGKU8G4q+mu96gBMEEHkQa2QsQlxWEHkQax3EeHlDK8v0qENc3K7dbPh2LIqF0w6QQfRbHS9uzc298hkYXbygdKU8f4ib7BogAYFZ7Tfg+dMb/Sg1oYA1uiSrh2fqTXP7nSSVrOHceRdKLRTxcuY6+dZHi3Ie9Hab4aA4tyHvS06TWSW7mVpfjKuJqMFQ/sEC0WRfA7pBGab3dX4h0NJODcxRev+JaZc6uwOrX4J1a4kynnIo3T8SU9YNY9tQVarbOsBHkaklZn4EETC2QdW5iqNVphGKRaPiDA85FNBrQR5UZlY3Yd9N1kDqNEDzFLb3DP4a0AefWoPaBpYWmniHsWYdLietd9s/iEU+u6agL+jB6UFsZXY79wQYuA1HYKhf4cRlTQpW6MVFoa1p/a5DQ964SPjdpO3GWP5ZrScK0bWdygwWG1/keX1Fe11O4ACNlZjKzw/KDz5pibsDAAwBA6x50q41ryviaSXz5E5kn0611dS7gKvC0m1ajg7YT8wPvtCzjEE5LBS0x8RAJgmMAmI8pjpUWuwCo+GcSACemf2murquI0XVnKPKvLysCNwIJAI3AgwRgiekcqlan4SBmDJGQBnFdXUGeYCUzmBr44ItQjE79ybt0RmNqmJnPxR8qDsWy2AQJ5kkKuAWgk4nw4HUiurqDyQ3NyRcLgd7JtwO1m0XJFo3STABM213cjg9MetGdkdU9u/vtAMSyq29lVNrk7QRz3SDyxXV1AgG/P7paha9vhuaCI0N+X2nkdF9B4kftDXN9xbeweA+HaShPVuXPIGZqo9tXuG1aICLjvHgk7VPOPUD868rqmRrngHZZ5LKhpA+UkWtAtNuu/FMeN3ybd22v4CGEZVVuYjd9DSPtJpd9ixd8xsc/5hkE+4n6V1dQ2XJxQ889fkVjdQsFx60Af8Uf6TfpXtdTDVaKf7T0+yC/7ye6fpW67DccRFay4j71/HOMnAiurqYJcfQZWpZX8AtNxrh4dGdR4o+orDX7XMEV5XUKuy898KqOLSDslN7RbWUryzipajpXV1INF6Jjy6J71Ren+Gl/FuXzrq6mUof1VfwU5ovX/ABLXV1KVXV/rIK/8VC9D866uoLTT09l7odUwYDmKdi+CK6uqFV4pgzAr2zqiKNt6sHnXtdSrG+k0iUQH9ag4Brq6iscQh7mm8qFNg+VdXVFax5X/2Q==');
+    ">
+          <div class="card effect ">
+            <div class="card-body">
+              <h5 class="card-title text-center">Special title treatment</h5>
+              <p class="card-text">"Just having satisfied customers isn't good enough anymore. ...
+                "Your most unhappy customers are your greatest source of learning." - Bill Gates.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="zoom-out-left">
+        <div class="bg-image p-5 shadow-1-strong rounded mb-5 " style="
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRX-V8qIorqkPK37HWiXtgfwtnEZG2vD-Z3Q&usqp=CAU');
+    ">
+          <div class="card effect">
+            <div class="card-body">
+              <h5 class="card-title text-center">Special title treatment</h5>
+              <p class="card-text">“We see our customers as invited guests to a party, and we are the hosts.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="custom-h2">
+      <h2><span data-aos="fade-up" data-aos-duration="1000">FEATURES</span></h2>
+    </div>
+    <p class="text-center mt-5" data-aos="fade-up" data-aos-duration="1000">Technology is supposed to make our lives
+      easier, allowing us to do things more quickly
+      and efficiently. </p>
+  </div>
+  <div class="container icons float-right my-5 mt-0">
+    <div class="row" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fas fa-address-card zoom"></i>
+          <p>
+            Adress Book
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-alipay zoom"></i>
+          <p>
+            Alipay
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-amazon-pay zoom"></i>
+          <p>
+            Amazon-pay
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fas fa-ambulance zoom"></i>
+          <p>
+            Amublance
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-angellist zoom"></i>
+          <p>
+           Anellist
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-apple zoom"></i>
+          <p>
+            Apple
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-artstation zoom"></i>
+          <p>
+            Artstation
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fas fa-audio-description zoom"></i>
+          <p>
+            Description
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-aws zoom"></i>
+          <p>
+            AWS
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-battle-net zoom"></i>
+          <p>
+            Battle-Net
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-bimobject zoom"></i>
+          <p>
+            Bimobject
+          </p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+        <div class="icon-box">
+          <i class="fab fa-alipay zoom"></i>
+          <p>
+            Alipay
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center py-5">
+    <div class="custom-h2">
+      <h2><span data-aos="fade-up" data-aos-duration="1000">TESTIMONIALS</span></h2>
+    </div>
+    <p class="text-center mt-4" data-aos="fade-up" data-aos-duration="1000">One of the strongest features of Puritanism
+      is its autobiographical tendency, its
+      passionate self-regard.</p>
+    <div class="owl-carousel owl-theme  mt-3 mb-5 px-5">
+      <div>
+        <div class="card mt-3" style="width: 22rem; height: 22rem">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+            alt="Card image cap">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card mt-3" style="width:22rem; height:  22rem">
+          <img class="card-img-top"
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGh1bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            alt="Card image cap">
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3" style="width: 22rem; height: 22rem">
+        <img class="card-img-top"
+          src="https://c8.alamy.com/comp/J9YY34/guy-humans-human-beings-people-folk-persons-human-human-being-laugh-J9YY34.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="custom-h2">
+      <h2><span data-aos="fade-up" data-aos-duration="3000">PORTFOLIO</span></h2>
+    </div>
+    <p class="text-center mt-4" data-aos="fade-up" data-aos-duration="3000">May they be the main thing that no one wants</p>
+    <div class="text-center mt-4">
+      <button type="button" class="btn btn-outline-primary">ALL</button>
+      <button type="button" class="btn btn-outline-primary">APP</button>
+      <button type="button" class="btn btn-outline-primary">Card</button>
+      <button type="button" class="btn btn-outline-primary">WEB</button>
+    </div>
+  </div>
+  <div class="cards-list special">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 1">
+          <div class="card_image"> <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ42LGMdQ-JpKC5Znb-_T74XiclcAWgAFXnkA&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>APP</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 2">
+          <div class="card_image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PLk3ajEGThSFOuDnY8sM_1zz5C6qYBshWA&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>APP</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 3">
+          <div class="card_image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0moUn7pfKmSIbzujD6-7SqliV56kfPBdrpQ&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>APP</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 4">
+          <div class="card_image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3j23swCvZdjCzQNlGiRKppoIrszAM19gkA&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>Card</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 5">
+          <div class="card_image">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEl0tSUponE5Uy2UyV2b0cA7Vlq3u4DWYLOQ&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>Card</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 6">
+          <div class="card_image"> <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yRbpUfLq9iEDO5hKt8v_Y9nVeJ3M4cXBGQ&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>Card</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 6">
+          <div class="card_image"> <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yRbpUfLq9iEDO5hKt8v_Y9nVeJ3M4cXBGQ&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>web</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 6">
+          <div class="card_image"> <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUCMp6585pzYyaBeWlUp2b5-CSyCKqmCI3hA&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>web</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="cards 6">
+          <div class="card_image"> <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3s7Bo9y32yh-WuwP9ESXQTwY6c3tsKQ-Yw&usqp=CAU" />
+          </div>
+          <div class="card_title title-white">
+            <p>web</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container text-center my-5">
+    <div class="custom-h2">
+      <h2><span data-aos="fade-up" data-aos-duration="1000">Team</span></h2>
+    </div>
+    <p class="text-center mt-4" data-aos="fade-up" data-aos-duration="1000">The consequences of his escape from something</p>
+      <div class="container text-center">
+        <div class="row ">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" data-aos="flip-left">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="social zoom">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-g"></i>
+              </div>
+              <div class="card-body zoom">
+                <h5 class="card-title text-dark">Walter White</h5>
+                <p class="card-text text-muted">Chief Executive Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card" data-aos="flip-left">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="social zoom">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-g"></i>
+              </div>
+              <div class="card-body zoom">
+                <h5 class="card-title text-dark">Sarah Jhonson</h5>
+                <p class="card-text text-muted">Product Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card"  data-aos="flip-right">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="social zoom">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-g"></i>
+              </div>
+              <div class="card-body zoom">
+                <h5 class="card-title text-dark">William Anderson</h5>
+                <p class="card-text text-muted">CTO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+            <div class="card"  data-aos="flip-right">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="social zoom">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-g"></i>
+              </div>
+              <div class="card-body zoom">
+                <h5 class="card-title text-dark">Amanda Jepson</h5>
+                <p class="card-text text-muted">Accountant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 
+  <div class="container text-center py-5">
+    <div class="custom-h2">
+      <h2><span data-aos="zoom-out">PRICING</span></h2>
+    </div>
+    <p class="text-center mt-4" data-aos="zoom-out">May they be the main thing that no one wants</p>
+  </div>
+  <div class="contanier text-center">
+    <div class="row">
+      <div class="col-12 cols-sm-12 col-md-6 col-lg 4 col-xl-4">
+        <div class="card" style="width: 25rem; height: 100%;">
+          <div class="card-body" data-aos="zoom-in-right">
+            <h3 class="card-title">Business</h3>
+            <h1>$19 / month</h1>
+            <h3 class="card-subtitle mb-2 text-muted">Aida dere</h3>
+            <h4>Don't miss the players</h4>
+            <p>No pain at the weekend</p>
+            <p>mass immigration</p>
+            <p>mass immigration</p>
+            <p>Cut out none at the weekend</p>
+            <p>mass immigration</p>
+            <p class="text-muted">mass compensation mi</p>
+            <button type="button" class="btn btn-outline-primary">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 cols-sm-12 col-md-6 col-lg 4 col-xl-4">
+        <div class="card border border-primary " style="width: 25rem; height: 100%; focus:none"></button>
+          <div class="card-body" data-aos="zoom-out">
+            <h3 class="card-title zoom ">Business</h3>
+            <h1 class="zoom">$19 / month</h1>
+            <h3 class="card-subtitle mb-2 text-muted zoom">Aida dere</h3>
+            <h4 class="zoom">Don't miss the players</h4>
+            <p class="zoom my-3">No pain at the weekend</p>
+            <p class="zoom my-3">mass immigration</p>
+            <p class="zoom my-3">mass immigration</p>
+            <p class="zoom my-3">Cut out none at the weekend</p>
+            <p class="text-muted zoom my-3">mass immigration</p>
+            <button type="button" class="btn btn-outline-primary my-3">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 cols-sm-12 col-md-6 col-lg 4 col-xl-4">
+        <div class="card" style="width: 25rem; height: 100%;" data-aos="zoom-in-left">
+          <div class="card-body" data-aos="zoom-in-left">
+            <h3 class="card-title">Business</h3>
+            <h1>$19 / month</h1>
+            <h3 class="card-subtitle mb-2 text-muted">Aida dere</h3>
+            <h4>Don't miss the players</h4>
+            <p>No pain at the weekend</p>
+            <p>mass immigration</p>
+            <p>mass immigration</p>
+            <p>Cut out none at the weekend</p>
+            <p>mass immigration</p>
+            <p class="text-muted">mass compensation mi</p>
+            <button type="button" class="btn btn-outline-primary">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center my-5">
+    <div class="custom-h2">
+      <h2><span data-aos="zoom-out-up">FREQUENTLY ASKED QUESTIONS</span></h2>
+    </div>
+  </div>
+  <div class="contanier">
+    <div class="row pl-5">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card w-75">
+          <div class="card-body" data-aos="zoom-out-up">
+            <i class="fas fa-question-circle fa-3x"></i>
+            <h4 class="card-title">Was it not the main reason for it to push the bed at least?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card w-75">
+          <div class="card-body" data-aos="zoom-out-up">
+            <p class="card-title">The price of the product itself Time for the arrows to push this weekend the lake bills will not be cured during pregnancy. The venenatis of the bed is a great ecological urn, the pain is not pure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card w-75">
+          <div class="card-body" data-aos="zoom-out-up">
+            <i class="fas fa-question-circle fa-3x"></i>
+            <h4 class="card-title">Was it not the main reason for it to push the bed at least?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card w-75">
+          <div class="card-body" data-aos="zoom-out-up">
+            <p class="card-title">The price of the product itself Time for the arrows to push this weekend the lake bills will not be cured during pregnancy. The venenatis of the bed is a great ecological urn, the pain is not pure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card w-75">
+          <div class="card-body" data-aos="zoom-out-up">
+            <i class="fas fa-question-circle fa-3x"></i>
+            <h4 class="card-title">Was it not the main reason for it to push the bed at least?</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="card w-75">
+          <div class="card-body" data-aos="zoom-out-up">
+            <p class="card-title">The price of the product itself Time for the arrows to push this weekend the lake bills will not be cured during pregnancy. The venenatis of the bed is a great ecological urn, the pain is not pure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center py-5">
+    <div class="custom-h2">
+      <h2><span data-aos="zoom-out-up">CONTACT US</span></h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body ">
+            <h3 class="card-title text-center" data-aos="fade-up-right">Maaz</h3>
+            <p class="justify text-justify" data-aos="fade-up-right">Just need a great leaven to grab the football, not the backyard phasellus. And so the lion's warmth. A lot of problems are now planning to start.</p>
+              <div class="social zoom text-center">
+            <i class="fab fa-twitter-square" ></i>
+            <i class="fab fa-facebook" data-aos="fade-up"></i>
+            <i class="fab fa-linkedin-in" data-aos="fade-up"></i>
+            <i class="fab fa-google-plus-square" data-aos="fade-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body"data-aos="fade-up">
+            <i class="fas fa-map-marker-alt fa-3x" data-aos="fade-up"></i>
+            <p data-aos="fade-up">A108 Adam Street
+              New York, NY 535022</p>
+            <i class="fas fa-envelope fa-3x" data-aos="fade-up"></i>
+            <p data-aos="fade-up"> info@example.com</p>
+            <i class="fas fa-phone fa-3x" data-aos="fade-up"></i>
+            <p data-aos="fade-up">+1 5589 55488 55s</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body" data-aos="zoom-out-left">
+            <form >
+              <div class="form-group ">
+                <input type="Name" class="form-control  shadow" id="Name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control shadow" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control shadow" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control shadow" id="exampleFormControlTextarea1" placeholder="Subject"
+                  rows="3"></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="footer ">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="card w-75">
+            <div class="card-body" data-aos="fade-up-right">
+              <h5 class="card-title">Copyright Vesperr. All Rights Reserved</h5>
+              <p class="card-text">Designed by <strong>Maaz</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="card w-75">
+            <div class="card-body ">
+              <button type="button" class="btn btn-outline-primary">Home</button>
+              <button type="button" class="btn btn-outline-secondary">About</button>
+              <button type="button" class="btn btn-outline-success">Pravicy Policy</button>
+              <button type="button" class="btn btn-outline-danger mt-3 ">Terms Of Use</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        dots: true,
+        loop: true,
+        margin: 30,
+        dotsEach: true,
+        navText: ['<button>Next</button>', '<button>Prev</button>'],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 2
+          }
+        }
+      })
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
